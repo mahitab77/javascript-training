@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+}
+
+input {
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#resultDisplay {
+  font-weight: bold;
+}

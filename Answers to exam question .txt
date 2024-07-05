@@ -1,0 +1,43 @@
+Answers to exam question 
+
+answer to question 1:
+
+
+1. Difference between "var" and "let" keywords in JavaScript:
+
+    - var: 
+       -Function-scoped. A variable declared with `var` is accessible throughout the entire function it's declared in, or globally if declared outside of any function.
+       -Can be redeclared within the same scope, potentially overwriting the previous value.
+       -They can be accessed before their declaration, but their value will be "undefined".     
+    - let: 
+       -Block-scoped. A variable declared with `let` is only accessible within the block (code enclosed in curly braces `{}`) where it's declared. 
+       -Cannot be redeclared within the same block. 
+       -They cannot be accessed before their declaration.
+
+
+
+2. Difference between "==" and "===" operators:
+
+   - "==": Performs loose comparison, without type.
+   - "===": Performs strict comparison, checking both value and type equality. 
+
+
+
+3. Difference between "while" and "for" loops:
+
+- "while" loop:
+   - Continues executing the loop body as long as the specified condition evaluates to true.
+   - Useful when you don't know the exact number of iterations beforehand.
+
+- "for" loop:
+   - for loop involves initialization, condition checking, and updating in a single line.
+ 
+
+4. Difference between "if" and "switch" statements:
+
+- "if" statement:
+   - Executes a block of code if a specified condition is `true`. Optionally, executes alternative blocks if other conditions are met (using "else if") or a final default block ("else").
+   - Suitable for handling multiple conditions or complex logic.
+
+- "switch" statement:
+   - Evaluates an expression and compares its value against a series of cases. If a match is found, the corresponding block of code is executed.
