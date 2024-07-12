@@ -1,0 +1,225 @@
+Question:
+What is the output of the following code?
+
+ 1. 
+   const numbers = [65, 44, 12, 4];
+   numbers.forEach(myFunction);
+   console.log(numbers);
+   function myFunction(item, index, arr) {
+       arr[index] = item * 10;
+   }
+   
+   Output:
+   [650, 440, 120, 40]
+   
+   
+
+   
+ 2.    
+   var pokemon = ["squirtle", "charmander", "bulbasaur"];
+   var pokeLength = pokemon.reduce(function(previous, current) {
+       return previous + current.length;
+   }, 0);
+   console.log(pokeLength);
+   
+   Output:
+   27
+   
+
+
+ 3.
+   const numbers = [5, 10, 15];
+   const reducer = numbers.reduce((accumulator, item) => {
+       return accumulator + item;
+   });
+   console.log(reducer);
+   
+   Output:
+   30
+
+
+       
+  4.
+    const euros = [29.76, 41.85, 46.5];
+    const doubled = euros.reduce((total, amount) => {
+        total.push(amount * 2);
+        return total;
+    }, []);
+    console.log(doubled);
+    
+    Output:
+    
+    [59.52, 83.7, 93]
+    
+
+  
+    
+  5.
+    const numbers = [1, 2, 3, 4, 5];
+    console.log(numbers.includes(2));
+    console.log(numbers.includes(99));
+    
+    Output:
+    
+    true
+    false
+
+
+
+
+ 6.
+   const myBoolean = true;
+    if (myBoolean) {
+        const turtles = [
+            'leonardo',
+            'donatello',
+            'michaelangelo',
+            'raphael'
+        ];
+        turtles = turtles.concat('Shredder');
+        console.log(turtles);
+    }
+    
+    Output:
+    Uncaught TypeError: Assignment to constant variable.
+
+
+
+
+ 7.     
+    const names = ['Batman', 'Catwoman', 'Joker', 'Bane'];
+    const fromIndex = 1;
+    const removeCount = 2;
+    const newNames = [
+      ...names.slice(0, fromIndex),
+      ...names.slice(fromIndex + removeCount)
+    ];
+    console.log(newNames);
+    
+    Output:
+    ['Batman', 'Bane']
+    
+
+
+ 8.     
+    console.log(typeof(NaN));
+    console.log(typeof(String));
+    console.log(typeof(undefind));
+    console.log(typeof(null));
+    console.log(typeof([5, 10, 20]));
+    
+    Output:
+    number
+    function
+    undefined
+    object
+    object
+
+
+
+9.
+    function showCoords(event) {
+        document.getElementById("demo").innerHTML = `
+        <p> X = ${event.clientX} </p>
+        <p> Y = ${event.clientY} </p>`;
+    }
+
+   The output is dynamic based on the event
+   you can check the sol. on :https://github.com/mahitab77/javascript-training/tree/main/js-showCoords
+
+
+
+10.
+   let person = {
+        profile: {
+            name: "",
+            age: 0
+        }
+    };
+
+    console.log(person.profile.name || "Anonymous");
+    console.log(person.profile.age || 18);
+    console.log(person.profile.name ?? "Anonymous");
+    console.log(person.profile.age ?? 18);
+    
+
+    Output:
+    
+    Anonymous
+    18
+    ""
+    0
+
+
+11.
+    const colors = ['white', 'black', 'gray'];
+    const clone = [...colors];
+    console.log(clone);
+    console.log(colors === clone);
+    
+    Output:
+    
+    [ 'white', 'black', 'gray' ]
+    false
+
+
+
+12.
+   const numbers = [1, 2, 3, 4, 5];
+    const nums = [];
+    function isEven(number) {
+        return number % 2 === 0;
+    }
+    const evenNumber = numbers.find(isEven);
+    const evenNum = nums.find(isEven);
+    console.log(evenNumber);
+    console.log(evenNum);
+    
+    Output:
+    
+    2
+    undefined
+
+
+
+13.
+    let myFunc = (first, last) => ({ firstName: first, lastName: last });
+    let testFunc = (first, last) => { firstName: first, lastName: last };
+    console.log(myFunc('john', 'doe'));
+    console.log(testFunc('john', 'doe'));
+    
+    Output:
+    { firstName: 'john', lastName: 'doe' }
+    undefined
+
+
+
+14.
+  function mul(num1) {
+        return function(num2) {
+            return function(num3) {
+                return num1 * num2 * num3;
+            };
+        };
+    }
+    console.log(mul(1)(5)(10));
+    
+    Output:
+    50
+
+
+
+15.
+    let arr = ['john', 'jack', 'john', 'jack'];
+    let result = arr.reduce((x, y) => {
+        if (!x[y]) {
+            x[y] = 0;
+        }
+        x[y]++;
+        return x;
+    }, []);
+    console.log(result);
+    
+    Output:
+    { john: 2, jack: 2 }
+    
