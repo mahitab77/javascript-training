@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Background Generator</h1>
+        <form id="background-form">
+            <div class="color-inputs">
+                <div class="color-input">
+                    <label for="color1">Select Color 1:</label>
+                    <input type="color" id="color1" name="color1" value="#ff0000">
+                </div>
+                <div class="color-input">
+                    <label for="color2">Select Color 2:</label>
+                    <input type="color" id="color2" name="color2" value="#0000ff">
+                </div>
+            </div>
+            <button type="button" id="generate-btn">Generate Background</button>
+        </form>
+        <p id="css-output"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
